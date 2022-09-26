@@ -1,0 +1,1 @@
+[![Build status](https://ci.appveyor.com/api/projects/status/5rfx314mp75ookrw?svg=true)](https://ci.appveyor.com/project/QA-USV/myautomationpatterntaskone)
