@@ -7,7 +7,6 @@ import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 import java.util.Locale;
 
-
 public class DataGenerator {
     private DataGenerator() {
     }
@@ -15,6 +14,7 @@ public class DataGenerator {
     static Faker faker = new Faker(new Locale("ru"));
 
     public static String generateCity(String locale) {
+
         return faker.address().cityName();
     }
 
