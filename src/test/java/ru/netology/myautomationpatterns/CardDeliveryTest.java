@@ -25,9 +25,6 @@ public class CardDeliveryTest {
         var daysToAddForSecondMeeting = 7;
         var secondMeetingDate = DataGenerator.generateDate(daysToAddForSecondMeeting);
         $("[data-test-id=city] input").setValue(validUser.getCity());
-        while ($("[data-test-id='city'] .input__sub").has(exactText("Доставка в выбранный город недоступна"))) {
-            $("[data-test-id=city] input").setValue(validUser.getCity());
-        }
         $("[data-test-id='date'] input").sendKeys(Keys.chord(Keys.SHIFT, Keys.HOME), Keys.BACK_SPACE);
         $("[data-test-id=date] input").setValue(firstMeetingDate);
         $("[data-test-id=name] input").setValue(validUser.getName());
