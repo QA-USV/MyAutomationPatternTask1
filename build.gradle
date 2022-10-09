@@ -1,6 +1,7 @@
 plugins {
     id 'java'
     id 'io.freefair.lombok' version '5.3.0'
+    id 'io.qameta.allure' version '2.9.6'
 }
 
 group 'ru.netology'
@@ -19,6 +20,14 @@ dependencies {
     testImplementation 'org.junit.jupiter:junit-jupiter:5.9.0'
     testImplementation 'com.codeborne:selenide:6.7.4'
     implementation 'com.github.javafaker:javafaker:1.0.2'
+    testImplementation 'io.qameta.allure:allure-selenide:2.16.1'
+}
+
+allure {
+    version = '2.16.1'
+    useJUnit5 {
+        version = '2.16.1'
+    }
 }
 
 test {
